@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions))
 }
 
-// Our server's routes (end points) - grouped by logical concern:
+// Our server's routes (end points) - grouped by feature:
 
 const authRoutes = require('./api/auth/auth.routes')
 app.use('/api/auth', authRoutes)
